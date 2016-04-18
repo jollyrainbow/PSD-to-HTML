@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NailsProf Создан, чтобы быть лидером!</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style/style.css" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+<![endif]-->
+  <!--[if lt IE 8]>
+  <link rel="stylesheet" href="style/iestyle.css" type="text/css">
+  <![endif]-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(document).ready(function() { 
+  $('a#go').click( function(event){ 
+    event.preventDefault(); 
+    $('#overlay').fadeIn(400, 
+       function(){ 
+        $('#modal_form') 
+          .css('display', 'block') 
+          .animate({opacity: 1, top: '50%'}, 200); 
+    });
+  });
+  
+  $('#modal_close, #overlay').click( function(){ 
+    $('#modal_form')
+      .animate({opacity: 0, top: '45%'}, 200,  
+        function(){ 
+          $(this).css('display', 'none'); 
+          $('#overlay').fadeOut(400);
+        }
+      );
+  });
+});
+</script>
+</head>
+<body>
+    <div id="wrapper0">
+  <a class="home-back" href="../index.html"><img src="../images/home.png" alt=""></a>
+    <div class="wrapper">
+    <div id="header">
+        <div class="position contact1">8 (965) <span class="contact2">266-0-266</span>
+    <p class="contact1">8 (495) <span class="contact2">665-32-62</span></p>
+    <p><a class="red" href="#">Обратный звонок</a></p>
+    </div>
+    <div class="position nailslogo"><a href="#"><img src="img/logo.png" alt="Логотип"></a>
+    <p class="slogan">Создан, чтобы быть лидером</p>
+    </div>
+    <div class="social">
+<a href="#" id="go">On-line запись</a>
+<div id="modal_form"><!-- Сaмo oкнo --> 
+      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+      <h2>Введите свои данные:</h2>
+    <form>
+     <label for="name">Имя <em>*</em></label>
+       <input id="name" placeholder="Введите ваше имя" required><br>
+       <label for="email">Email <em>*</em></label>
+       <input id="email" type="email"><br>
+     <label for="age">Возраст<em>*</em></label>
+       <input id="age"><br>
+     <label for="gender">Пол</label>
+       <select id="gender">
+        <option value="female" selected>Женщина</option>
+        <option value="male">Мужчина</option>
+       </select><br>
+     <p><input type="submit" value="Отправить информацию"></p>
+     </form>
+</div>
+<div id="overlay"></div>
+    <div class="spritesoc">
+    <ul>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    </ul>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="gormenu">
+  <ul class="menu">
+  <li><a href="#"><img class="img2" src="img/home.png" alt="На главную страницу"></a></li>
+  <li><span class="borderleft"></span><a href="#">О компании</a>
+  <ul>
+  <li><a href="index.html">О нас</a></li>
+  <li><a href="#">Наша команда</a></li>
+  <li><a href="#">Новости</a></li>
+  </ul>
+  </li>
+  <li><span class="borderleft"></span><a href="#">Обучение</a></li>
+  <li><span class="borderleft"></span><a href="#">Расписание</a></li>
+  <li><span class="borderleft"></span><a href="#">Статьи</a></li>
+  <li><span class="borderleft"></span><a href="#">Галерея</a></li>
+  <li><span class="borderleft"></span><a href="#">Моделям</a></li>
+  <li><span class="borderleft"></span><a href="#">Контакты</a></li>
+  </ul>
+    <div class="shop"><a class="button" href="#">Интернет магазин</a>
+  </div>
+  </div>
+  <div class="clr"></div>
+  </div>
+  </div>
+  <div class="wrapper2">
+  <div id="slider">
+  <div class="text">НОВЫЕ КУРСЫ
+  <div class="text2">ПО НАРАЩИВАНИЮ НОГТЕЙ
+  <div class="text3">Только в этом месяце скидка 7%
+  <div class="button2"><a href="#">Записаться</a></div>
+  </div>
+  </div>
+  </div>
+  <div class="clr"></div>
+  <ul class="switch">
+  <li class="active"><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="wrapper3">
+    <div id="kursu">
+  <div class="kurs"><a href="#">Базовые курсы маникюра, педикюра и наращивания ногтей</a></div>
+  <div class="kurs2"><a href="#">Курсы дизайна</a></div>
+  <div class="kurs3"><a href="#">Повышение квалификации по наращиванию ногтей</a></div>
+  <div class="clr"></div>
+  </div>
+  </div>
+  <div class="wrapper4">
+    <div id="content">
+  <h2 class="name">О нас</h2>
+  <div class="general">
+  <p>Пройдя путь поиска и усовершенствования мировых стандартов в технике и обучении Тренг достиг совершенно нового уровня. Посвятив много времени и усилий в развитии новых технологий в ногтевом бизнесе, он сделал очень успешный шаг в развитии собственной линии высококлассной продукции. Odyssey Nail Systems - бренд, также известный как ONS. Также компанию занимается обучением наращиванию ногтей молодых специалистов.</p>
+  <p>Продукция ONS имеет огромный успех в Азии, Европе, США, Японии, Корее и привлекла внимание профессионалов в области нейл - индустрии России. </p>
+  <p>Продукция ONS продолжает завоевывать популярность и люди по всему Миру начинают узнавать и любить этот материал который создан и доведен Тренгом Нгуеном до совершенства в области техники и удобства в обучении. Неудивительно, что выпускники школы наращиванию ногтей ONS подтверждают свой статус победителей на международных чемпионатах по нейл-дизайну.</p>
+  </div>
+  <div class="news">
+  <h2 class="name">Новости</h2>
+  <div class="news1"><h3>Новинки! Гель-лаки с эффектом хрома</h3>
+  <div class="calendar"><img src="img/calendar.png" alt="Календарь"><span>26.11.14</span>
+  <p class="new">Поступили в продажу новые гель-лаки "Metallic gel polish" с эффектом хрома. Все новинки выставлены в интернет-магазине.</p>
+  <a class="more" href="#">Подробнее...</a>
+  </div>
+  </div>
+  <div class="news2">
+  <h3>Новые пластиковые формы в продаже</h3>
+  <div class="calendar"><img src="img/calendar.png" alt="Календарь"><span>19.11.14</span>
+  <p class="new">В продажу поступили новые пластиковые формы для наращивания ногтей любым материалом. Прекрасно держат форму.</p>
+  <a class="more" href="#">Подробнее...</a>
+  </div>
+  </div>
+  <div class="news3">
+  <h3>Маникюр и педикюр в ноябре 2014</h3>
+  <div class="calendar"><img src="img/calendar.png" alt="Календарь"><span>07.11.14</span>
+  <p class="new">Курс маникюра состоится 16, 17, 18, 23, 25 ноября 2014 года. Мастер-класс от профессионалов с многолетним опытом.</p>
+  <a class="more2" href="#">Подробнее...</a>
+  </div>
+  </div>
+  </div>
+  <div class="clr"></div>
+  </div>
+  </div>
+  </div>
+  <div class="wrapper5">
+    <div id="footer">
+  <ul class="menu2">
+  <li><span class="borderleft1"></span><a href="#">Главная</a></li>
+  <li><span class="borderleft1"></span><a href="#">О компании</a></li>
+  <li><span class="borderleft1"></span><a href="#">Обучение</a></li>
+  <li><span class="borderleft1"></span><a href="#">Полезная информация</a></li>
+  <li><span class="borderleft1"></span><a href="#">Фото</a></li>
+  <li><span class="borderleft1"></span><a href="#">Контакты</a></li>
+  </ul>
+  <div class="position contact1">8 (965) <span class="contact2">266-0-266</span><br>
+  <p class="contact1">8 (495) <span class="contact2">665-32-62</span></p>
+  <p><a class="red" href="#">Обратный звонок</a></p>
+  </div>
+  <div class="position nailslogo"><a href="#"><img src="img/logo.png" alt="Логотип"></a>
+  <p class="slogan">Создан, чтобы быть лидером</p>
+  </div>
+  <div class="social"><a class="red" href="#">On-line запись</a>
+  <div class="spritesoc">
+  <ul>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="clr"></div>
+  <div class="copyright">
+  <span>NailsProf © 2014</span><img src="img/copyright.png" alt="Счетчик"><a href="#">Создание сайта</a><span>Webstroy</span></div>
+  </div>
+  </div>
+<div class="for_ie">Для корректного отображения содержимого страницы, пожалуйста, обновите свой браузер</div>
+</body>
+</html>
+
